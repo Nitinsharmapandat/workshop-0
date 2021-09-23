@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    *{
+margin: 0; padding: 0; box-sizing: border-box;
+    }
+.centercalcy{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+</style>
+
+
+
+</head>
+<body>
+    <div class="centercalcy">
+        <form name="nitin">
+<input type="text" name="" value="calcultor"  id=" app-name">
+<input type="text" name="answer" id="display-answer">
+
+
+<div class="layer2">
+    <input type="button" name="" class="main-num" value="c"  id="clearbutton"  onclick="nitin.answer.value = '' " >
+    <input type="button" name="" class="main-num" value="="  onclick="nitin.answer.value =eval(nitin.answer.value) ">
+</div>
+
+
+
+<div class="layer1">
+    <input type="button" name="" class="main-num" value="7"  onclick="nitin.answer.value += '7' ">
+    <input type="button" name="" class="main-num" value="8"  onclick="nitin.answer.value += '8' ">
+    <input type="button" name="" class="main-num" value="9"  onclick="nitin.answer.value += '9' ">
+    <input type="button" name="" class="oper" value="*"  onclick="nitin.answer.value += '*' ">
+</div>
+
+
+<div class="layer2">
+    <input type="button" name="" class="main-num" value="4"  onclick="nitin.answer.value += '4' ">
+
+    <input type="button" name="" class="main-num" value="5"  onclick="nitin.answer.value += '5' ">
+    <input type="button" name="" class="main-num" value="6"  onclick="nitin.answer.value += '6' ">
+    <input type="button" name="" class="oper" value="-"  onclick="nitin.answer.value += '-' ">
+
+</div><div class="layer2">
+    <input type="button" name="" class="main-num" value="1"  onclick="nitin.answer.value += '1' ">
+    <input type="button" name="" class="main-num" value="2"  onclick="nitin.answer.value += '2' ">
+    <input type="button" name="" class="main-num" value="3"  onclick="nitin.answer.value += '3' ">
+    <input type="button" name="" class="oper" value="+"  onclick="nitin.answer.value += '+' ">
+
+
+
+    <div class="layer1">
+        <input type="button" name="" class="main-num" value="."  onclick="nitin.answer.value += '.' ">
+        <input type="button" name="" class="main-num" value="0"  onclick="nitin.answer.value += '0' ">
+        <input type="button" name="" class="main-num" value="%"  onclick="nitin.answer.value += '%' ">
+        <input type="button" name="" class="oper" value="/"      onclick="nitin.answer.value += '/' ">
+    </div>
+
+
+
+
+
+
+
+</div>
+        </form>
+    </div>
+</body>
+</html>
